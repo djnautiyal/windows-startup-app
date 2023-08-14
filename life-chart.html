@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+		
+		td, th {
+		  border: 1px solid #dddddd;
+		  text-align: left;
+		  padding: 8px;
+		}
+		
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+		</style>
+<head>	
+	<title>Hey there</title>
+</head>
+
+<body>
+	<ol>
+	<li>No. of days left in this year: <p id="days"></p></li>
+	<li>No. of weeks left in your life(considering life till 70): <p id="weeks"></p> </li>
+	</ol>
+	
+	Here's what's on the menu:
+	<table>
+		<tr>
+			<th>Time</th>
+			<th>Activity</th>
+			<th>Links</th>
+		</tr>
+		<tr>
+			<td>30 minutes</td>
+			<td>Easy Programming</td>
+			<td><a href="https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=1">LeetCode Easy</a></td>
+		</tr>
+		<tr>
+			<td>30 minutes</td> 
+			<td>Micro-project: windows startup app</td>
+			<td>Win+R > shell:startup > Open File Location</a></td>
+		</tr>
+		<tr>
+			<td>30 minutes</td>
+			<td>Chunking Up</a></td>
+			<td><a href="https://github.com/djnautiyal/event-transformation-storage-pipeline">Event Storage transformation pipeline</a></td>
+		</tr>
+		<tr>
+			<td>1 hour</td>
+			<td>Leveling up</td>
+			<td><a href="https://leetcode.com/list?selectedList=og17zvgg">LeetCode Classical Dynamic Programming</a></td>
+		</tr>
+		<tr>
+			<td>1 hour</td>
+			<td>Mundane tasks</td>
+			<td>TODO</a></td>
+		</tr>
+	</table>
+<script>
+	const date = new Date();
+	const days = 365 - (date - new Date("2023-01-01"))/(24*60*60*1000);
+	document.getElementById("days").innerHTML = days;
+
+	const weeks = (2068 - date.getFullYear()) * 52;
+	document.getElementById("weeks").innerHTML = weeks;
+</script>
+</body>
+</html>
