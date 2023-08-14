@@ -13,7 +13,7 @@ End If
 Answer = MsgBox("Do you want to work on your windows startup app(Time: 30 mins; Type: Easy Programming)",VbQuestion+VbYesNo,"Open VS Code")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
-    ws.run("C:\Users\dhann\AppData\Local\Programs\Microsoft VS Code")
+    ws.run("code")
     Wscript.Quit()
 End If
 
