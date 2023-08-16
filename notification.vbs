@@ -12,7 +12,7 @@ ideaLocation="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.
 Answer = MsgBox("Do you want to open Leetcode Easy(Time: 30 mins; Type: Easy Programming)?",vbSystemModal+VbQuestion+VbYesNo,"Open Leetcode")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
-    ws.run("iexplore.exe "& lcEasyCodeURL)
+    ws.run("firefox.exe "& lcEasyCodeURL)
     Wscript.Quit()
 End If
 Answer = MsgBox("Do you want to work on your windows startup app(Time: 30 mins; Type: Easy Programming)", vbSystemModal+VbQuestion+VbYesNo,"Open VS Code")
