@@ -9,5 +9,6 @@ Create a better flow and reduce the number or if-else prompts.
 
 ## How to run:
 Please make sure that you are using correct file-locations/urls. Mentioned here:
-- urls can be found using searching "http".
-- file location can be found in ":\\" and is only in vbs/bat file.
+- Urls can be found using searching "http".
+- File location can be found in ":\\" and is only in vbs/bat file.
+- Make sure to put the startupfile shortcut into start-up folder(Win+R > "shell:startup" > A folder will open).
