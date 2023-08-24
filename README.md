@@ -13,3 +13,9 @@ Please make sure that you are using correct file-locations/urls. Mentioned here:
 - File location can be found in ":\\" and is only in vbs/bat file.
 - Make sure to change birthYear var.
 - Make sure to put the startupfile shortcut into start-up folder(Win+R > "shell:startup" > A folder will open).
+
+## Win+R Shortcuts
+'intellij', 'docker-desktop'
+
+## How to create Win+R shortcuts
+[https://www.easytutorial.com/custom-run-commands-windows.html](custom run commands)
