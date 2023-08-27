@@ -9,7 +9,7 @@ MsgBox "Hi, You are " & age &" years old. Still, there are " & DateDiff("d",dt,"
 lcEasyCodeURL="https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=1"
 etspURL="https://github.com/djnautiyal/event-transformation-storage-pipeline"
 ckadURL="https://cloudacademy.com/learning-paths/certified-kubernetes-application-developer-ckad-exam-preparation-1-3086"
-workspaceURL="https://myworkspace-ptp-3-in.jpmchase.com"
+workspaceURL="https://myworkspace.jpmchase.com/"
 
 Answer = MsgBox("Office?", vbSystemModal+VbQuestion+VbYesNo,"Open Intellij")
 If Answer = vbYes Then
@@ -21,7 +21,7 @@ End If
 Answer = MsgBox("Want to create a Data pipeline(Time: 30 mins; Type: Easy Programming)? You promised to display your Spotify profile data in a web app.", vbSystemModal+VbQuestion+VbYesNo,"Open Intellij")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
-    ws.run("intellij")
+    ws.run("intellij V:\Java\event-transformation-storage-pipeline")
     ws.run("firefox.exe " & etspURL)
     ws.run("docker-desktop")
     Wscript.Quit()
@@ -29,6 +29,7 @@ End If
 Answer = MsgBox("CKAD study(Time: 1hr; Type: Easy Programming)?", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
+    ws.run("intellij V:\Java\K8s")
     ws.run("firefox.exe " & ckadURL)
     Wscript.Quit()
 End If
