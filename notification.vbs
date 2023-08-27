@@ -8,13 +8,22 @@ MsgBox "Hi, You are " & age &" years old. Still, there are " & DateDiff("d",dt,"
 
 lcEasyCodeURL="https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=1"
 etspURL="https://github.com/djnautiyal/event-transformation-storage-pipeline"
-ckadURL="https://cloudacademy.com/learning-paths/certified-kubernetes-application-developer-ckad-exam-preparation-1-3086"
+ckadURL="https://cloudacademy.com/dashboard/"
 workspaceURL="https://myworkspace.jpmchase.com/"
 
 Answer = MsgBox("Office?", vbSystemModal+VbQuestion+VbYesNo,"Open Intellij")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
-    ws.run("firefox.exe " & workspaceURL)
+    ws.run("firefox " & workspaceURL)
+    Wscript.Quit()
+End If
+
+Answer = MsgBox("CKAD due date is Oct 1st and You're only 18% done.CKAD study(Time: 2hr; Type: Easy Programming)? ", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
+If Answer = vbYes Then
+    set ws = CreateObject("wscript.shell")
+    ws.run("intellij V:\Java\K8s")
+    ws.run("firefox https://github.com/dgkanatsios/CKAD-exercises")
+    ws.run("firefox " & ckadURL)
     Wscript.Quit()
 End If
 
@@ -22,21 +31,14 @@ Answer = MsgBox("Want to create a Data pipeline(Time: 30 mins; Type: Easy Progra
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
     ws.run("intellij V:\Java\event-transformation-storage-pipeline")
-    ws.run("firefox.exe " & etspURL)
+    ws.run("firefox " & etspURL)
     ws.run("docker-desktop")
-    Wscript.Quit()
-End If
-Answer = MsgBox("CKAD study(Time: 1hr; Type: Easy Programming)?", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
-If Answer = vbYes Then
-    set ws = CreateObject("wscript.shell")
-    ws.run("intellij V:\Java\K8s")
-    ws.run("firefox.exe " & ckadURL)
     Wscript.Quit()
 End If
 Answer = MsgBox("Do you want to open Leetcode Easy(Time: 30 mins; Type: Easy Programming)?",vbSystemModal+VbQuestion+VbYesNo,"Open Leetcode")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
-    ws.run("firefox.exe "& lcEasyCodeURL)
+    ws.run("firefox "& lcEasyCodeURL)
     Wscript.Quit()
 End If
 Answer = MsgBox("Do you want to work on your windows startup app(Time: 30 mins; Type: Easy Programming)?", vbSystemModal+VbQuestion+VbYesNo,"Open VS Code")
