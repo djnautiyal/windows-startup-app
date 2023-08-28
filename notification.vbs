@@ -1,5 +1,5 @@
 Option Explicit
-Dim Title,Answer,ws,lcEasyCodeURL,dt,age,birthYear,etspURL,workspaceURL,ckadURL
+Dim Title,Answer,ws,lcEasyCodeURL,dt,age,birthYear,etspURL,workspaceURL,ckadURL,spotifyAPIURL
 
 dt = now
 birthYear=1998
@@ -10,6 +10,7 @@ lcEasyCodeURL="https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=
 etspURL="https://github.com/djnautiyal/event-transformation-storage-pipeline"
 ckadURL="https://cloudacademy.com/dashboard/"
 workspaceURL="https://myworkspace.jpmchase.com/"
+spotifyAPIURL="https://developer.spotify.com/documentation/web-api/tutorials/getting-started"
 
 Answer = MsgBox("Office?", vbSystemModal+VbQuestion+VbYesNo,"Open Intellij")
 If Answer = vbYes Then
@@ -32,6 +33,7 @@ If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
     ws.run("intellij V:\Java\event-transformation-storage-pipeline")
     ws.run("firefox " & etspURL)
+    ws.run("firefox " & spotifyAPIURL)
     ws.run("docker-desktop")
     Wscript.Quit()
 End If
