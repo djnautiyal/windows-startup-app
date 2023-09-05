@@ -15,11 +15,12 @@ spotifyAPIURL="https://developer.spotify.com/documentation/web-api/tutorials/get
 Answer = MsgBox("Office?", vbSystemModal+VbQuestion+VbYesNo,"Open Intellij")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
+    ws.run("zoom")
     ws.run("firefox " & workspaceURL)
     Wscript.Quit()
 End If
 
-Answer = MsgBox("CKAD due date is Oct 1st and You're only 18% done.CKAD study(Time: 2hr; Type: Easy Programming)? ", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
+Answer = MsgBox("CKAD due date is Oct 1st and You're only 30% done.CKAD study(Time: 2hr; Type: Easy Programming)? You also have a github exercise and a practice test to give!", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
     ws.run("intellij V:\Java\K8s")
@@ -46,7 +47,8 @@ End If
 Answer = MsgBox("Do you want to work on your windows startup app(Time: 30 mins; Type: Easy Programming)?", vbSystemModal+VbQuestion+VbYesNo,"Open VS Code")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
-    ws.run("code")
+    ws.run("firefox " & "https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites")
+    ws.run("code V:\windows-startup-app" )
     Wscript.Quit()
 End If
 
