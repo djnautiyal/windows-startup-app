@@ -18,6 +18,7 @@ Please make sure that you are using correct file-locations/urls. Mentioned here:
 - 'intellij'
 - 'docker-desktop'
 - 'do'(for vbs script, when I want to switch to something else.)
+- 'zoom'
 
 ## How to create Win+R shortcuts
 [https://www.easytutorial.com/custom-run-commands-windows.html](custom run commands)

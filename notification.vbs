@@ -20,10 +20,10 @@ If Answer = vbYes Then
     Wscript.Quit()
 End If
 
-Answer = MsgBox("CKAD due date is Oct 1st and You're only 30% done.CKAD study(Time: 2hr; Type: Easy Programming)? You also have a github exercise and a practice test to give!", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
+Answer = MsgBox("CKAD due date is Nov 30th and You're only 55% done.CKAD study? Just give lab test on cloud academy.", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
-    ws.run("intellij V:\Java\K8s")
+    ws.run("intellij V:\Java\ckad-notes")
     ws.run("firefox https://github.com/dgkanatsios/CKAD-exercises")
     ws.run("firefox " & ckadURL)
     Wscript.Quit()
