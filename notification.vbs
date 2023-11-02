@@ -20,7 +20,7 @@ If Answer = vbYes Then
     Wscript.Quit()
 End If
 
-Answer = MsgBox("CKAD due date is Nov 30th and You're only 55% done.CKAD study? Just give lab test on cloud academy.", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
+Answer = MsgBox("CKAD study? CKAD due date is Nov 19th and You're 80% done already. LET'S DO IT!", vbSystemModal+VbQuestion+VbYesNo,"Open Cloud Academy")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
     ws.run("intellij V:\Java\ckad-notes")
