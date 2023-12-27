@@ -1,0 +1,23 @@
+{
+  "name": "windows-startup-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djnautiyal/windows-startup-app.git"
+  },
+  "author": "Dhannanjai Nautiyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djnautiyal/windows-startup-app/issues"
+  },
+  "homepage": "https://github.com/djnautiyal/windows-startup-app#readme",
+  "devDependencies": {
+    "electron": "^28.1.0"
+  }
+}
