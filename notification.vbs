@@ -18,6 +18,20 @@ If Answer = vbYes Then
     ws.run("firefox " & workspaceURL)
     Wscript.Quit()
 End If
+Answer = MsgBox("Do you want to work on your windows startup app(Time: 30 mins; Type: Easy Programming)?", vbSystemModal+VbQuestion+VbYesNo,"Open VS Code")
+If Answer = vbYes Then
+    set ws = CreateObject("wscript.shell")
+    ws.run("firefox " & "https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites")
+    ws.run("code V:\windows-startup-app" )
+    Wscript.Quit()
+End If
+
+Answer = MsgBox("Do you want to open Leetcode Easy(Time: 30 mins; Type: Easy Programming)?",vbSystemModal+VbQuestion+VbYesNo,"Open Leetcode")
+If Answer = vbYes Then
+    set ws = CreateObject("wscript.shell")
+    ws.run("firefox "& lcEasyCodeURL)
+    Wscript.Quit()
+End If
 
 Answer = MsgBox("Want to create a Data pipeline(Time: 30 mins; Type: Easy Programming)? You promised to display your Spotify profile data in a web app.", vbSystemModal+VbQuestion+VbYesNo,"Open Intellij")
 If Answer = vbYes Then
@@ -26,19 +40,6 @@ If Answer = vbYes Then
     ws.run("firefox " & etspURL)
     ws.run("firefox " & spotifyAPIURL)
     ws.run("docker-desktop")
-    Wscript.Quit()
-End If
-Answer = MsgBox("Do you want to open Leetcode Easy(Time: 30 mins; Type: Easy Programming)?",vbSystemModal+VbQuestion+VbYesNo,"Open Leetcode")
-If Answer = vbYes Then
-    set ws = CreateObject("wscript.shell")
-    ws.run("firefox "& lcEasyCodeURL)
-    Wscript.Quit()
-End If
-Answer = MsgBox("Do you want to work on your windows startup app(Time: 30 mins; Type: Easy Programming)?", vbSystemModal+VbQuestion+VbYesNo,"Open VS Code")
-If Answer = vbYes Then
-    set ws = CreateObject("wscript.shell")
-    ws.run("firefox " & "https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites")
-    ws.run("code V:\windows-startup-app" )
     Wscript.Quit()
 End If
 
