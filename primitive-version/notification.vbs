@@ -4,7 +4,7 @@ Dim Title,Answer,ws,lcEasyCodeURL,dt,age,birthYear,etspURL,workspaceURL,spotifyA
 dt = now
 birthYear=1998
 age=Year(dt)-birthYear
-MsgBox "Hi, You are " & age &" years old. Still, there are " & DateDiff("d",dt,"01-01-24") & " days left in this year Let's do Something!", vbSystemModal+vbExclamation
+MsgBox "Hi, You are " & age &" years old. Still, there are " & DateDiff("d",dt,"01-01-25") & " days left in this year Let's do Something!", vbSystemModal+vbExclamation
 
 lcEasyCodeURL="https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=1"
 etspURL="https://github.com/djnautiyal/event-transformation-storage-pipeline"
@@ -18,18 +18,19 @@ If Answer = vbYes Then
     ws.run("firefox " & workspaceURL)
     Wscript.Quit()
 End If
+
+Answer = MsgBox("Do you want to open Leetcode Easy(Time: 30 mins; Type: Easy Programming)?",vbSystemModal+VbQuestion+VbYesNo,"Open Leetcode")
+If Answer = vbYes Then
+    set ws = CreateObject("wscript.shell")
+    ws.run("firefox "& "https://takeuforward.org/interview-sheets/strivers-79-last-moment-dsa-sheet-ace-interviews/")
+    Wscript.Quit()
+End If
+
 Answer = MsgBox("Do you want to work on your windows startup app(Time: 30 mins; Type: Easy Programming)?", vbSystemModal+VbQuestion+VbYesNo,"Open VS Code")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
     ws.run("firefox " & "https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites")
     ws.run("code V:\windows-startup-app" )
-    Wscript.Quit()
-End If
-
-Answer = MsgBox("Do you want to open Leetcode Easy(Time: 30 mins; Type: Easy Programming)?",vbSystemModal+VbQuestion+VbYesNo,"Open Leetcode")
-If Answer = vbYes Then
-    set ws = CreateObject("wscript.shell")
-    ws.run("firefox "& lcEasyCodeURL)
     Wscript.Quit()
 End If
 
