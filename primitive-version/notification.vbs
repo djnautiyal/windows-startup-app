@@ -19,11 +19,13 @@ If Answer = vbYes Then
     Wscript.Quit()
 End If
 
-Answer = MsgBox("Do you want to open Leetcode Easy(Time: 30 mins; Type: Easy Programming)?",vbSystemModal+VbQuestion+VbYesNo,"Open Leetcode")
+Answer = MsgBox("Do you want to do some leetcode(Time: 30 mins; Type: Easy Programming)?",vbSystemModal+VbQuestion+VbYesNo,"Open Leetcode")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
-    ws.run("firefox "& "https://takeuforward.org/interview-sheets/strivers-79-last-moment-dsa-sheet-ace-interviews/")
     ws.run("firefox "& "https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/")
+    ws.run("firefox "& "https://takeuforward.org/interview-sheets/strivers-79-last-moment-dsa-sheet-ace-interviews/")
+    ws.run("firefox "& "https://www.techinterviewhandbook.org/grind75?mode=all&weeks=16&hours=10")
+    
     Wscript.Quit()
 End If
 
