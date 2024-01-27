@@ -25,7 +25,7 @@ If Answer = vbYes Then
     ws.run("firefox "& "https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/")
     ws.run("firefox "& "https://takeuforward.org/interview-sheets/strivers-79-last-moment-dsa-sheet-ace-interviews/")
     ws.run("firefox "& "https://www.techinterviewhandbook.org/grind75?mode=all&weeks=16&hours=10")
-    ws.run("excel " & "C:\Users\dhann\OneDrive\Documents\DSA-Jan-2024.xlsm")
+    ws.run("excel " & "C:\Users\dhann\OneDrive\Documents\DSA-Jan-2024.xlsx")
     
     Wscript.Quit()
 End If
