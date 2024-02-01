@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <title>Hello from Electron renderer!</title>
-  </head>
-  <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
-  </body>
-  <script src="./renderer.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <title>Windows Startup App</title>
+</head>
+
+<body>
+  <h1>Hello from Electron renderer!</h1>
+  <p>Office?</p>
+  <p id="info"></p>
+  <!-- <button>Select</button> -->
+
+  <p>
+    Do you want to work on your windows startup app? <br>
+    Time: 30 mins, Type: Easy Programming
+  </p>
+  <button id="windows-startup-app">Select</button>
+  <!-- <button>Select</button> -->
+
+  <p>
+    Do you want to Leetcode Easy<br>
+    Time 40 mins, Type: Easy Programming
+  </p>
+  <button id="dsa-study">Select</button>
+  <script src="renderer.js"></script>
+</body>
 </html>

@@ -1,26 +1,37 @@
-const { app, BrowserWindow } = require('electron/main')
+const { app, BrowserWindow, ipcMain } = require('electron/main');
+const { shell } = require('electron');
+
+let mainWindow;
 
 const createWindow = () => {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600
-  })
+	const mainWindow = new BrowserWindow({
+		width: 800,
+		height: 600,
+		webPreferences: {
+			nodeIntegration: true,
+			enableRemoteModule: true,
+			contextIsolation: false,
+			sandbox: false
+		}
+	})
 
-  win.loadFile('index.html')
+	mainWindow.loadFile('index.html')
+	mainWindow.on('closed', function () {
+		app.quit();
+	  });
 }
 
 app.whenReady().then(() => {
-  createWindow()
+	createWindow()
+	shell.beep()
+	app.on('activate', () => {
+		if (BrowserWindow.getAllWindows().length === 0) createWindow()
+	})
 
-  app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow()
-    }
-  })
 })
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
+	if (process.platform !== 'darwin') {
+		app.quit()
+	}
 })
