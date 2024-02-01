@@ -34,6 +34,8 @@ Answer = MsgBox("Do you want to work on your windows startup app(Time: 30 mins; 
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
     ws.run("firefox " & "https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites")
+    ws.run("firefox " & "https://www.electronjs.org/docs/latest/README#getting-started")
+    ws.run("firefox " & "https://www.electronjs.org/docs/latest/tutorial/process-model")
     ws.run("code V:\windows-startup-app" )
     Wscript.Quit()
 End If
