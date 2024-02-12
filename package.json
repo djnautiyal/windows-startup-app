@@ -19,5 +19,8 @@
   "homepage": "https://github.com/djnautiyal/windows-startup-app#readme",
   "devDependencies": {
     "electron": "^28.1.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
   }
 }

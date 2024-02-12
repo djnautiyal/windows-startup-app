@@ -63,3 +63,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
         console.log("Oops, button was not found.");
     }
 })
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    const el = document.getElementById('play-game');
+    console.log("play-game button connected? Let's see.")
+    if (el) {
+        el.addEventListener('click', () => {
+            console.log("Trying to open game related stuff.")
+            shell.openExternal("https://github.com/KrishKash/Excel-Generator-ElectronJs/blob/master/Excel-Generator-ElectronJs/index.html")
+            window.open("game.html")
+
+        });
+    }
+    else {
+        console.log("Oops, button was not found.");
+    }
+})

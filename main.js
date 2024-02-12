@@ -15,6 +15,8 @@ const createWindow = () => {
 		}
 	})
 
+	mainWindow.webContents.openDevTools();
+
 	mainWindow.loadFile('index.html')
 	mainWindow.on('closed', function () {
 		app.quit();
