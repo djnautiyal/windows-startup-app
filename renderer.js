@@ -70,9 +70,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     if (el) {
         el.addEventListener('click', () => {
             console.log("Trying to open game related stuff.")
-            shell.openExternal("https://github.com/KrishKash/Excel-Generator-ElectronJs/blob/master/Excel-Generator-ElectronJs/index.html")
-            window.open("game.html")
-
+            window.open("game.html",  "_blank", "nodeIntegration=yes,contextIsolation=no");
         });
     }
     else {

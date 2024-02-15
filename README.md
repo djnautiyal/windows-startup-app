@@ -6,9 +6,13 @@ Starting up a menu-like startup task as soon as my computer starts.
 It can open links for now. Need to be packaged as desktop app to start use. Not the preferred version.
 
 ## Target State:
-- Goes to System tray upon closure or is accessible via cmd line
-- able to fetch excel sheet and create questionnaire from it.
+- able to fetch excel sheet and create questionnaires from it.
+- Make it possible for it to access multiple sheets
 - able to run leetcode or GFG automatically in a new application window.
+- Remove Node Integration from all renderer process(Security risk).
+- Convert all html pages into a SPA (Single-page application) to get seamless work.
+- (Developer side only) Add nodemon to the applicaiton for regular updates.
+- Move to react and typescript(Not necessary, if project gets big)
 
 ## How to run:
 Currently only from VS Code. Inside its terminal, run 'npm start'
