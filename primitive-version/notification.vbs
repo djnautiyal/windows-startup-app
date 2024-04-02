@@ -37,7 +37,16 @@ If Answer = vbYes Then
     Wscript.Quit()
 End If
 
-Answer = MsgBox("Striver's playlist??",vbSystemModal+VbQuestion+VbYesNo,"Open SDE sheet")
+Answer = MsgBox("Striver's A2Z Sheet??",vbSystemModal+VbQuestion+VbYesNo,"Striver's A2Z")
+If Answer = vbYes Then
+    set ws = CreateObject("wscript.shell")
+    ws.run("firefox "& "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2")
+    ws.run("excel " & "C:\Users\dhann\OneDrive\Documents\dsa-ledger.xlsx")
+    
+    Wscript.Quit()
+End If
+
+Answer = MsgBox("Striver's 191 Sheet??",vbSystemModal+VbQuestion+VbYesNo,"Striver's 191")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
     ws.run("firefox "& "https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/")
@@ -46,7 +55,7 @@ If Answer = vbYes Then
     Wscript.Quit()
 End If
 
-Answer = MsgBox("Grind 169??",vbSystemModal+VbQuestion+VbYesNo,"Open Grind 169")
+Answer = MsgBox("Grind 169??",vbSystemModal+VbQuestion+VbYesNo,"Grind 169")
 If Answer = vbYes Then
     set ws = CreateObject("wscript.shell")
     ws.run("firefox "& "https://www.techinterviewhandbook.org/grind75?mode=all&weeks=16&hours=10")
