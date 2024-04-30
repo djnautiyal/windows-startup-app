@@ -6,6 +6,8 @@ birthYear=1998
 age=Year(dt)-birthYear
 MsgBox "Your current age:" & age & vbNewLine & "Days left in this year: " & DateDiff("d",dt,"01-01-25"), vbSystemModal+vbExclamation
 
+MsgBox "LeetCode Preparation days: " & DateDiff("d", dt, "20-06-24"), vbSystemModal+vbExclamation
+
 lcEasyCodeURL="https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=1"
 etspURL="https://github.com/djnautiyal/event-transformation-storage-pipeline"
 workspaceURL="https://myworkspace.jpmchase.com/"
